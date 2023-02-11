@@ -467,10 +467,6 @@ body {
   background: #924726;
 }
 
-.light-blue {
-  background: #d2eaf5;
-}
-
 .purple {
   background: #b02f7c;
 }
@@ -497,12 +493,12 @@ body {
 
 .board {
   display: grid;
-  grid-template-columns: 125px repeat(9, 80px) 125px;
-  grid-template-rows: 125px repeat(9, 80px) 125px;
+  grid-template-columns: 125px repeat(12, 80px) 125px;
+  grid-template-rows: 125px repeat(12, 80px) 125px;
   grid-gap: 2px;
   margin: 50px auto;
-  width: 1264px;
-  height: 1264px;
+  width: 1240px;
+  height: 1240px;
   background: #080808;
   border: 2px solid #080808;
 }
@@ -526,20 +522,50 @@ body {
   letter-spacing: 12px;
 }
 
-.community-chest-deck {
-  grid-column: 2 / 4;
+.chance-deck {
+  grid-column: 5 / 8;
   grid-row: 2 / 4;
-  transform: rotate(135deg);
+  transform: rotate(225deg);
   margin-bottom: 60px;
   margin-right: 60px;
 }
 
-.chance-deck {
+.community-chest-deck {
+  grid-column: 2 / 4;
+  grid-row: 5  / 8;
+  transform: rotate(45deg);
+  margin-bottom: 60px;
+  margin-right: 60px;
+}
+
+.bus-deck {
   grid-column: 5 / 7;
   grid-row: 5 / 7;
   transform: rotate(315deg);
   margin-top: 60px;
   margin-left: 60px;
+}
+
+.deck {
+  text-align: center;
+}
+
+.deck .drawing {
+  font-size: 90px;
+  position: relative;
+  top: calc(50% - 45px); /* 50% - 3/4 of icon height */
+}
+
+.community-chest-deck .drawing {
+  color: #0695CD ;
+}
+
+.bus-deck .drawing {
+  color: #D60717;
+}
+
+.chance-deck .drawing {
+  color: #f50c2b;
 }
 
 .label {
@@ -561,13 +587,13 @@ body {
 }
 
 .horizontal-row {
-  grid-template-columns: repeat(9, 80px);
+  grid-template-columns: repeat(12, 80px);
   grid-template-rows: 125px;
 }
 
 .vertical-row {
   grid-template-columns: 125px;
-  grid-template-rows: repeat(9, 80px);
+  grid-template-rows: repeat(12, 80px);
 }
 
 .vertical-row .container {
@@ -576,13 +602,13 @@ body {
 }
 
 .bottom-row {
-  grid-column: 2 / 11;
-  grid-row: 11;
+  grid-column: 2 / 14;
+  grid-row: 14;
 }
 
 .left-row {
   grid-column: 1;
-  grid-row: 2 / 11;
+  grid-row: 2 / 14;
 }
 
 .left-row .container {
@@ -590,7 +616,7 @@ body {
 }
 
 .top-row {
-  grid-column: 2 / 11;
+  grid-column: 2 / 14;
   grid-row: 1;
 }
 
@@ -599,8 +625,8 @@ body {
 }
 
 .right-row {
-  grid-column: 11;
-  grid-row: 2 / 11;
+  grid-column: 14;
+  grid-row: 2 / 14;
 }
 
 .right-row .container {
@@ -716,8 +742,8 @@ body {
 }
 
 .go {
-  grid-column: 11;
-  grid-row: 11 / 12;
+  grid-column: 14;
+  grid-row: 14 / 15;
   position: relative;
 }
 
@@ -745,7 +771,7 @@ body {
 
 .jail {
   grid-column: 1;
-  grid-row: 11 / 12;
+  grid-row: 14 / 15;
   display: grid;
   grid-template-columns: repeat(10, 12.5px);
   grid-template-rows: repeat(10, 12.5px);
@@ -754,7 +780,7 @@ body {
 }
 
 .jail .drawing {
-  grid-column: 4 / 11;
+  grid-column: 4 / 14;
   grid-row: 1 / 8;
   width: 87.5px;
   height: 87.5px;
@@ -832,7 +858,7 @@ body {
 }
 
 .go-to-jail {
-  grid-column: 11;
+  grid-column: 14;
   grid-row: 1 / 1;
 }
 
@@ -871,7 +897,7 @@ body {
 
 .community-chest .drawing {
   font-size: 50px;
-  color: #d2eaf5;
+  color: #0695CD;
 }
 
 .community-chest .instructions {
