@@ -506,7 +506,7 @@ body {
 .center {
   grid-column: 2 / 14;
   grid-row: 2 / 14;
-  background: #fafaf8;
+  background: #C7E2D1;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -634,7 +634,7 @@ body {
 }
 
 .space {
-  background: #fafaf8;
+  background: #C7E2D1;
   text-align: center;
 }
 
