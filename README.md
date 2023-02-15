@@ -1,13 +1,9 @@
 # Monopoly board
 
-### Live site: https://codepen.io/johnnycopes/pen/yzQyMp
+### Live site: https://codepen.io/nmusso/pen/yLxyJJw
 
-The Monopoly game board built with CSS Grid.
-
-#### Goals of this project:
-
-- Build something with CSS Grid to understand how it works
-- Sharpen my styling skills by building a challenging layout
+The Monopoly mega game board built with CSS Grid.
+Evolution of the monopoly repo
 
 #### Local installation:
 
